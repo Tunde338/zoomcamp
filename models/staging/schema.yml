@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ny_taxi
+    database: latest-project-410306
+    tables:
+      - name: grren_taxi_trip_2020
+      - name: yellow_cab_data
+
