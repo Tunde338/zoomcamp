@@ -9,7 +9,7 @@ sources:
       - name: fhv_2019_trip_data
       
 models:
-  - name: stg_yellow_cabb_data
+  - name: stg_full_yellow_taxi_data
     description: ""
     columns:
       - name: vendorid
@@ -92,7 +92,7 @@ models:
         data_type: float64
         description: ""
 
-  - name: stg_grren_taxi_trip_2020
+  - name: stg_full_green_taxi_data
     description: ""
     columns:
       - name: tripid
