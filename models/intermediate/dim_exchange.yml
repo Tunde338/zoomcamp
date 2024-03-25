@@ -4,8 +4,10 @@ models:
   - name: dim_exchange
     description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
     columns:
-      - name: priceQuote
-        description: ""
+     
           
+      - name:  baseId
+        description: "The unique identifier of the base currency of the asset pair."
+
       - name:  exchangeId
-        description: ""
+        description: "The unique identifier of the exchange where the asset is traded."

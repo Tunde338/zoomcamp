@@ -5,10 +5,10 @@ models:
     description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
     columns:
       - name: baseId
-        description: ""
+        description: "The unique identifier of the base currency of the asset pair"
           
       - name:  baseSymbol
-        description: ""
+        description: "Description: The symbol of the base currency of the asset pair."
 
       - name: quoteId
         description: "The coins price in usd"
@@ -17,5 +17,5 @@ models:
               # where: "status = 'Returned'"
 
       - name: quoteSymbol
-        description: ""
+        description: "Description: The symbol of the quote currency of the asset pair."
         

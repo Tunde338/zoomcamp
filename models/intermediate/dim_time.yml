@@ -7,4 +7,7 @@ models:
      
           
       - name:  updated
-        description: ""
+        description: " The timestamp indicating when the data was last updated"
+
+      - name:  baseId
+        description: " The unique identifier of the base currency of the asset pair."

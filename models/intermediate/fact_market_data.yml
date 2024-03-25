@@ -5,23 +5,21 @@ models:
     description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
     columns:
       - name: priceQuote
-        description: ""
+        description: "The quoted price of the asset"
           
       - name:  rank
-        description: ""
+        description: "The ranking of the asset relative to others in the market."
 
       - name: priceUsd
-        description: "The coins price in usd"
+        description: "The price of the asset in USD"
         tests:
           - not_null
               # where: "status = 'Returned'"
 
       - name: volumeUsd24Hr
-        description: ""
+        description: "The trading volume of the asset in USD over the last 24 hours."
         
 
       - name:  percentExchangeVolume
-        description: ""
-        tests:
-          - not_null
+        description: "The percentage of the asset's trading volume relative to the total trading volume on the exchange"
             

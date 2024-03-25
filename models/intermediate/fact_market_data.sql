@@ -1,4 +1,5 @@
 SELECT
+    baseId,
     priceQuote, 
     rank, 
     priceUsd, 
