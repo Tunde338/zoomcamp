@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fact_table
+    description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
+    columns:
+      - name: priceQuote
+        description: ""
+          
+      - name:  rank
+        description: ""
+
+      - name: priceUsd
+        description: "The coins price in usd"
+        tests:
+          - not_null
+              # where: "status = 'Returned'"
+
+      - name: volumeUsd24Hr
+        description: ""
+        
+
+      - name:  percentExchangeVolume
+        description: ""
+        tests:
+          - not_null
+            

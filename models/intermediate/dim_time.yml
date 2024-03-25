@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_time
+    description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
+    columns:
+     
+          
+      - name:  updated
+        description: ""

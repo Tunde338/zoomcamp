@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_exchange
+    description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
+    columns:
+      - name: priceQuote
+        description: ""
+          
+      - name:  exchangeId
+        description: ""
