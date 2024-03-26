@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: dim_time
+    description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
+    columns:
+     
+          
+      - name:  updated
+        description: " The timestamp indicating when the data was last updated"
+
+      - name:  baseId
+        description: " The unique identifier of the base currency of the asset pair."

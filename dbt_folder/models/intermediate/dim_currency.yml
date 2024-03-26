@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fact_table
+    description: " Table describing and detaililing every calls recievec by the security agency in the Sanfrasisco Califonia area of the united state "
+    columns:
+      - name: baseId
+        description: "The unique identifier of the base currency of the asset pair"
+          
+      - name:  baseSymbol
+        description: "Description: The symbol of the base currency of the asset pair."
+
+      - name: quoteId
+        description: "The coins price in usd"
+        tests:
+          - not_null
+              # where: "status = 'Returned'"
+
+      - name: quoteSymbol
+        description: "Description: The symbol of the quote currency of the asset pair."
+        
