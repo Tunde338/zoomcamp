@@ -145,17 +145,68 @@ Navigate to the BigQuery section and create a new dataset to store processed cry
 
 
 
+**Reproducibility**
 
+To ensure reproducibility, you have two options: running the code on a cloud compute engine or on your local machine.
 
+Running on a Virtual Machine:
 
+Create a Virtual Machine:
 
+Set up a virtual machine environment where you'll run your code.
+Clone the Repository:
 
+Clone the repository containing your code into your virtual machine.
+Install Docker:
 
+Ensure Docker is installed on your virtual machine.
+Install Docker-Compose:
 
+Download and install Docker-Compose using the following commands:
+bash
 
+wget -O docker-compose https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64
+chmod +x docker-compose
+./docker-compose --version
+Navigate to Docker Compose File:
 
+Go to the directory containing the Docker Compose file.
+Run Docker-Compose:
 
+Execute the following command to start the Kafka deployment:
+bash
 
+docker-compose up
+This command will successfully deploy Kafka on a Docker container.
 
-Pipeline Overview:
+Access Keys and Setup:
 
+Obtain access keys from Google to write and read from Google Cloud Storage and BigQuery.
+Navigate to the streaming_data_to_kafka_files directory.
+Enter the produce folder.
+Build and Run the Producer Application:
+
+Build the Docker image for the producer application:
+bash
+
+docker build -t producer-app .
+Run the producer application Docker container:
+bash
+
+docker run producer-app
+Repeat for the Consumer File:
+
+Similarly, build and run the consumer file to extract data from the API and store it in the Google Cloud bucket.
+Deploy Mage Using Terraform:
+
+Use the provided link here to guide you through deploying Mage using Terraform.
+Configure io_config.yaml:
+
+Navigate to io_config.yaml and input your Google Cloud credentials.
+Move Data to BigQuery:
+
+Copy the code from the mage_pipeline_file and use it to move your data to BigQuery.
+DBT:
+
+Proceed with your DBT setup and configuration.
+By following these steps, you can ensure reproducibility and successfully deploy and run your code across different environments. Adjustments may be necessary based on your specific setup and requirements.
